@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#ffe094"
+    android:layout_height="wrap_content">
+    <TextView
+        android:text="恭喜！拼图已完成！"
+        android:textColor="#fff"
+        android:textSize="25sp"
+        android:padding="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/go_rank"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="排行榜"
+            android:textColor="#fff"
+            android:background="@drawable/button_bg2"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/go_return"
+            android:layout_marginLeft="5dp"
+            android:text="返回"
+            android:layout_width="0dp"
+            android:textColor="#fff"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg2"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

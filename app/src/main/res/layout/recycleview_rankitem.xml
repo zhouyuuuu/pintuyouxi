@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp"
+    android:layout_marginBottom="3dp"
+
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/ptsize_tv"
+        android:text="阶数"
+        android:textColor="#000"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:textSize="20sp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/pageRank_tv"
+        android:text="步数"
+        android:textColor="#000"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:textSize="20sp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/timeRank_tv"
+        android:text="计时"
+        android:textColor="#000"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:textSize="20sp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/time_tv"
+        android:text="时间"
+        android:textColor="#000"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight="6"
+        android:textSize="20sp"
+        android:layout_height="wrap_content" />
+</LinearLayout>

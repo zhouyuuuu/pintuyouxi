@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/recycle_bg">
+    <ImageView
+        android:id="@+id/game_iv"
+        android:visibility="invisible"
+        android:padding="80dp"
+        android:elevation="10dp"
+        android:background="@drawable/yuantu_bg"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:id="@+id/data"
+        android:layout_margin="5dp"
+        android:elevation="4dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@drawable/button_bg"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:text="步数："
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/pageCount_tv"
+            android:text="0"
+            android:textSize="20sp"
+            android:paddingTop="10dp"
+            android:textColor="#fff"
+            android:paddingBottom="10dp"
+            android:paddingRight="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="时间："
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="0"
+            android:id="@+id/timecount_tv"
+            android:textSize="20sp"
+            android:paddingTop="10dp"
+            android:textColor="#fff"
+            android:paddingBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/frame_game"
+        android:layout_below="@id/data"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:background="@drawable/game_rc_bg"
+            android:id="@+id/game_rv"
+            android:padding="4dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/bt_yuantu"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="原 图"
+            android:textColor="#fff"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/bt_reset"
+            android:textColor="#fff"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="重 置"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/bt_return"
+            android:textColor="#fff"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_bg"
+            android:text="返 回"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</RelativeLayout>
