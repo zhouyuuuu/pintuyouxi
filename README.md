@@ -1,7 +1,8 @@
 # pintuyouxi
 
-##a puzzle game
+## a puzzle game
 ----
 
-###preview
+### preview
 -----------
+![start](pintuyouxi/images/webwxgetmsgimg.jpg)
