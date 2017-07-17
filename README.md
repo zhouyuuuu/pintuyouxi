@@ -3,4 +3,4 @@ a puzzle game
 
 
 ### Preview:
-![start](images/webwxgetmsgimg.jpg)
+![start](images/webwxgetmsgimg (6).jpg)
