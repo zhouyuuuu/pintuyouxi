@@ -9,52 +9,48 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="8dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/button_bg"
         android:translationZ="3dp"
         android:gravity="center">
 
         <TextView
             android:id="@+id/ptsize_tv"
             android:text="阶数"
-            android:textColor="#000"
+            android:textColor="#fff"
             android:gravity="center"
             android:layout_width="0dp"
             android:layout_weight="2"
-            android:textSize="22sp"
+            android:textSize="20sp"
             android:layout_height="wrap_content" />
         <TextView
             android:id="@+id/pageRank_tv"
             android:text="步数"
-            android:textColor="#000"
+            android:textColor="#fff"
             android:gravity="center"
             android:layout_width="0dp"
             android:layout_weight="2"
-            android:textSize="22sp"
+            android:textSize="20sp"
             android:layout_height="wrap_content" />
         <TextView
             android:id="@+id/timeRank_tv"
             android:text="计时"
-            android:textColor="#000"
+            android:textColor="#fff"
             android:gravity="center"
             android:layout_width="0dp"
             android:layout_weight="2"
-            android:textSize="22sp"
+            android:textSize="20sp"
             android:layout_height="wrap_content" />
         <TextView
             android:id="@+id/time_tv"
             android:text="日期与时间"
-            android:textColor="#000"
+            android:textColor="#fff"
             android:gravity="center"
             android:layout_width="0dp"
             android:layout_weight="6"
-            android:textSize="22sp"
+            android:textSize="20sp"
             android:layout_height="wrap_content" />
     </LinearLayout>
-    <View
-        android:layout_width="match_parent"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_height="1dp"
-        android:background="#000"/>
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rank_rv"
 
@@ -65,9 +61,11 @@
     <LinearLayout
         android:layout_alignParentBottom="true"
         android:orientation="horizontal"
+        android:layout_marginRight="2dp"
+        android:layout_marginLeft="2dp"
         android:layout_width="match_parent"
         android:gravity="center"
-
+        android:background="@drawable/button_bg"
         android:layout_height="wrap_content">
         <Button
             android:id="@+id/bt_two"
@@ -76,6 +74,7 @@
             android:paddingLeft="30dp"
             android:paddingRight="30dp"
             android:text="2阶排行"
+            android:elevation="3dp"
             android:layout_weight="1"
             android:textColor="#fff"
             android:layout_marginBottom="3dp"
@@ -89,6 +88,7 @@
             android:paddingLeft="30dp"
             android:paddingRight="30dp"
             android:text="3阶排行"
+            android:elevation="3dp"
             android:layout_marginBottom="3dp"
             android:layout_marginTop="3dp"
             android:background="@drawable/button_bg"
@@ -99,6 +99,7 @@
             android:layout_weight="1"
             android:id="@+id/bt_four"
             android:textColor="#fff"
+            android:elevation="3dp"
             android:layout_marginRight="5dp"
             android:layout_marginLeft="10dp"
             android:paddingLeft="30dp"

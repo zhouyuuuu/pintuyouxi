@@ -10,7 +10,6 @@ import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
 import android.provider.MediaStore;
-import android.support.annotation.IdRes;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -21,7 +20,6 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.RadioGroup;
 import android.widget.Toast;
 import com.example.lenovo.pingtuyouxi.Adapter.MyBaseAdapter;
 import com.example.lenovo.pingtuyouxi.Adapter.gridAdapterMy;
@@ -77,6 +75,10 @@ public class PictureActivity extends AppCompatActivity {
     private gridAdapterMy mGridAdapter;//RecyclerView适配器
     private AlertDialog alertDialog;//生成拼图对话框
     private GridLayoutManager mGridLayoutManager;//RecyclerView网格管理器
+    private ImageView ivNum2;
+    private ImageView ivNum3;
+    private ImageView ivNum4;
+
     private static class MyHandler extends Handler {
 
         WeakReference<PictureActivity> mActivity;//对此Activity的弱引用,防止内存泄露
@@ -310,27 +312,60 @@ public class PictureActivity extends AppCompatActivity {
             }
         });
 
+//        //初始化图片规模控件
+//        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
+//        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+//            @Override
+//            public void onCheckedChanged(RadioGroup group, @IdRes int checkedId) {
+//                //每次点击RadioButton改变图片规模
+//                switch (checkedId){
+//                    case R.id.rb1:
+//                        pingtusize = 2;
+//                        break;
+//                    case R.id.rb2:
+//                        pingtusize = 3;
+//                        break;
+//                    case R.id.rb3:
+//                        pingtusize = 4;
+//                        break;
+//                    default:
+//                        break;
+//                }
+//            }
+//        });
+
         //初始化图片规模控件
-        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
-        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        ivNum2 = (ImageView) findViewById(R.id.iv_num2);
+        ivNum3 = (ImageView) findViewById(R.id.iv_num3);
+        ivNum4 = (ImageView) findViewById(R.id.iv_num4);
+        ivNum2.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onCheckedChanged(RadioGroup group, @IdRes int checkedId) {
-                //每次点击RadioButton改变图片规模
-                switch (checkedId){
-                    case R.id.rb1:
-                        pingtusize = 2;
-                        break;
-                    case R.id.rb2:
-                        pingtusize = 3;
-                        break;
-                    case R.id.rb3:
-                        pingtusize = 4;
-                        break;
-                    default:
-                        break;
-                }
+            public void onClick(View v) {
+                pingtusize = 2;
+                ivNum2.setImageResource(R.drawable.num2);
+                ivNum3.setImageResource(R.drawable.numb3);
+                ivNum4.setImageResource(R.drawable.numb4);
             }
         });
+        ivNum3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                pingtusize = 3;
+                ivNum2.setImageResource(R.drawable.numb2);
+                ivNum3.setImageResource(R.drawable.num3);
+                ivNum4.setImageResource(R.drawable.numb4);
+            }
+        });
+        ivNum4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                pingtusize = 4;
+                ivNum2.setImageResource(R.drawable.numb2);
+                ivNum3.setImageResource(R.drawable.numb3);
+                ivNum4.setImageResource(R.drawable.num4);
+            }
+        });
+
 
         //初始化ImageView选择图片
         ImageView iv_more = (ImageView) findViewById(R.id.more_iv);

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#ffffff"
+    android:background="@drawable/recycle_bg"
     android:gravity="center_horizontal"
     tools:context="com.example.lenovo.pingtuyouxi.Activitys.PictureActivity">
     <LinearLayout
@@ -14,62 +14,68 @@
         android:translationZ="4dp"
         android:background="#ffffff"
         android:gravity="center">
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_marginLeft="5dp"
-            android:gravity="center_vertical"
-            android:layout_height="wrap_content">
+
             <TextView
+                android:text="Puzzle's size:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="15sp"
-                android:textColor="#282828"
-                android:text="拼图规模："
-                />
-            <RadioGroup
-                android:id="@+id/radioGroup"
-                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/iv_num2"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/numb2"
+                android:scaleType="centerInside"
                 android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <RadioButton
-                    android:id="@+id/rb1"
-                    android:text="2 X 2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-                <RadioButton
-                    android:id="@+id/rb2"
-                    android:text="3 X 3"
-                    android:checked="true"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-                <RadioButton
-                    android:id="@+id/rb3"
-                    android:text="4 X 4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-            </RadioGroup>
-        </LinearLayout>
+                android:layout_width="0dp"
+                android:layout_height="25dp" />
+            <ImageView
+                android:id="@+id/iv_num3"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/num3"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:layout_width="0dp"
+                android:layout_height="25dp" />
+            <ImageView
+                android:id="@+id/iv_num4"
+                android:layout_marginRight="5dp"
+                android:scaleType="centerInside"
+                android:layout_weight="1"
+                android:src="@drawable/numb4"
+                android:layout_width="0dp"
+                android:layout_height="25dp" />
+
         <ImageView
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:id="@+id/image_rank"
             android:paddingTop="9dp"
             android:paddingBottom="8dp"
-            android:layout_width="46dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="46dp"
             android:src="@drawable/button_rank"
             android:scaleType="fitCenter"/>
         <ImageView
+            android:layout_marginRight="5dp"
             android:paddingTop="10dp"
             android:paddingBottom="7dp"
             android:id="@+id/more_iv"
-            android:layout_width="46dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:scaleType="fitCenter"
             android:src="@drawable/more"
             android:layout_height="46dp" />
     </LinearLayout>
     <android.support.v7.widget.RecyclerView
         android:id="@+id/id_recyclerview"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
