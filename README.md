@@ -1,2 +1,6 @@
-# pintuyouxi
-a pintu game
+a puzzle game
+===
+
+
+### Preview:
+![start](images/webwxgetmsgimg.jpg)
