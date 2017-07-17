@@ -1,8 +1,6 @@
-# pintuyouxi
+a puzzle game
+===
 
-## a puzzle game
-----
 
-### preview
------------
-![start](pintuyouxi/images/webwxgetmsgimg.jpg)
+### Preview:
+![start](images/webwxgetmsgimg.jpg)
